@@ -13,7 +13,7 @@
    		user-select:none;  
 	}
 	</style>
-	<script src="WGGparticle.js"></script>
+	<script src="WggParticle.js"></script>
 	
 	<body>
 		<div id="wrap">
@@ -21,7 +21,12 @@
 		</div>
 	</body>
 	<script type="text/javascript">	
-		
+		var canvasParticle=document.getElementById('container');
+		ctx=canvasParticle.getContext("2d");
+		Particle.render(ctx,{
+			particleNum:400,
+			distance:80
+		})
 	</script>
 </html>
 
